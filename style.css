@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+body {
+  overflow-x: hidden;
+  color: #505962;
+  font-family: 'Lato', sans-serif;
+}
+
+.offset:before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+
+}
+
+/*--Navigation--*/
+
+.navbar {
+  text-transform: uppercase;
+  font-family: 'Russo One', sans-serif!important;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background-color: rgba(0, 0, 0, 0.85)!important;
+
+}
+
+
+.navbar-nav li {
+  padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+}
+.navbar-brand img {
+  width: 30%;
+  height: 30%;
+  align-items: center;
+  color: white;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #008bd1;
+}
+
+/*---Landing Page ---*/
+
+.home-inner {
+  background-image: url(img/backgroundTwo.jpg);
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  color: white;
+  font-style: bold;
+  z-index: 1;
+  text-transform: uppercase;
+}
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: 1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+
+.caption h3{
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+  letter-spacing: .2rem;
+
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 50;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+/*--Course Section--*/
+#about h1 {
+  font-family: 'Russo One', sans-serif!important;
+}
+#about img {
+  width: 25%;
+  border-radius: 50%;
+}
+#about {
+  margin: 1.5rem 2rem 0 0;
+}
+
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+  
+}
+.thumbnail img{
+  width: 50%;
+  border: thick solid #008bd1;
+}
+.narrow h1 {
+  font-size: 2.4rem;
+}
+.btn-secondary {
+  border-width: medium;
+  border-radius: 50;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: .6rem 1.2rem;
+  margin: 1rem;
+  color: white;
+  background-color: #505962;
+  border-color: #505962;
+}
+.btn-secondary:hover {
+  background-color: #282d31;
+  border-color: #282d31;
+}
+/*--Projects--*/
+.jumbotron {
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
+}
+
+h3.heading {
+  font-size: 1.9rem;
+  font-family: 'Russo One', sans-serif!important;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.heading-underline {
+  width: 14rem;
+  height: .2rem;
+  background-color: #008bd1;
+  margin: 0 auto 2rem;
+}
+.project h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: .4rem;
+}
+.project p {
+  font-size: 1.1rem;
+}
+/*resources*/
+.fixed {
+  background-image: url(img/blueCode_bg.jpg);
+  z-index: -1;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.2)!important;
+  color: white;
+  text-shadow: .1rem .1rem .5rem black;
+  padding: 7rem 2rem;
+}
+.fixed-background h3 {
+  margin-bottom: 2rem;
+  
+}
+.fixed-background p {
+  margin-top: 1.5rem;
+}
+.brand img{
+  width: 12%;
+  margin: auto;
+}
+footer {
+  background-color: #40474e;
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 0rem;
+}
+
+footer a {
+  color: white;
+}
+.social-icon svg.svg-inline--fa {
+  font-size: 2.5rem;
+  margin: .5rem .5rem 0 0;
+  color:1ebba3!important;
+}
+
+/*--Media Queries--*/
+@media (max-width: 767px) {
+
+  .caption h1 {
+    font-size: 3.8rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+  
+  .caption h3{
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+    
+  }
+  .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 1.5rem;
+  }
+  
+}
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
